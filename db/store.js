@@ -11,7 +11,7 @@ class Store {
         return readFileAsync("db/db.json", "utf8")
     }
 
-    write() {
+    write(note) {
         return writeFileAsync("db/db.json", JSON.stringify(note))
 
     }
@@ -20,16 +20,29 @@ class Store {
         return this.read().then((notes) => {
             let parsedNotes;
             try {
-                parsedNotes.push(JSON.parse(notes))
+                parsedNotes = [].concat(JSON.parse(notes))
 
             }.catch(error) {
                 parsedNotes = []
             }
+            
+            return parsedNotes;
         })
 
     }
 
-    addNotes() {
+    addNotes(notes) {
+        const {title, text} = notes;
+
+        if(!title || !text) {
+            throw new Error("Title and Text cannot be blank")
+        }
+
+        const newNote = {title, text}
+
+        return this.getNotes().then((notes) => [...notes, newNote])
+        .then((updatedNotes) => this.write(updatedNotes))
+        .then(() => newNote);
 
     }
 
@@ -39,4 +52,4 @@ class Store {
 
 }
 
-module.exports = new Store;
+module.exports = new Store();
