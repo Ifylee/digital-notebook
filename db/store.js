@@ -33,14 +33,14 @@ class Store {
 
     }
 
-    addNotes(notes) {
-        const {title, text} = notes;
+    addNotes(note) {
+        const {title, text} = note;
 
         if(!title || !text) {
             throw new Error("Title and Text cannot be blank")
         }
 
-        const newNote = {title, text, id: uuidv4}
+        const newNote = {title, text, id: uuidv4()};
 
         return this.getNotes().then((notes) => [...notes, newNote])
         .then((updatedNotes) => this.write(updatedNotes))
@@ -49,8 +49,8 @@ class Store {
     }
 
     removeNotes(id) {
-        return this.getNotes().then((notes) => notes.filter((node) => note.id !== id))
-        .then((filteredNotes) => this.write(filteredNotes))
+        return this.getNotes().then((notes) => notes.filter((note) => note.id !== id))
+        .then((filteredNotes) => this.write(filteredNotes));
     }
 
 }

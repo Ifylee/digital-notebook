@@ -11,15 +11,15 @@ router.get("/notes", (req,res) => {
 
 
 router.post("/notes", (req,res) => {
-    store.addNotes(req.body).then((notes) => {
-        return res.status(200).json(notes)
+    store.addNotes(req.body).then((note) => {
+        return res.status(201).json(note)
     }).catch((error) => res.status(500).json(error))
 })
 
 
 router.delete("/notes/:id", (req,res) => {
-    store.removeNotes(req.params,id).then(() => {
-        return res.status(200).json({delete: true, id: req.params.id})
+    store.removeNotes(req.params.id).then(() => {
+        return res.status(204).json({delete: true, id: req.params.id})
     }).catch((error) => res.status(500).json(error))
 });
 
