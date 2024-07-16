@@ -1,7 +1,12 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text",
+        "title": "Test Title",
+        "text": "Test text",
         "id": 1
+    },
+    {
+        "title": "Ify's notebook",
+        "text": "Outing with friends on Saturday",
+        "id": "6818faf3-983d-4453-83b8-a0bf5ca355ef"
     }
 ]
