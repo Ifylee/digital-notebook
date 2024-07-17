@@ -1,5 +1,5 @@
 # Digital-Notebook
-https://digital-notebook.onrender.com
+
 
 This is a user-friendly application designed to help users organize their thoughts and also keep track of notes, ideas and tasks efficiently. With features like writing, saving and deleting functions, it is the perfect application for students, professionals and anyone who needs to keep their thoughts in order.
 
@@ -22,7 +22,7 @@ You can also contact me directly at:  [ifyekezie@yahoo.co.uk](mailto:ifyekezie@y
 You are just a click away from a world of keeping tracks of your thoughts and tasks digitally:
 https://github.com/Ifylee/digital-notebook
 
-
+# Live at: https://digital-notebook.onrender.com
 
 ![A screenshot of my generated digital notebook page](image-1.png)
 
