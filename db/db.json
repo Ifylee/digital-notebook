@@ -5,8 +5,33 @@
         "id": 1
     },
     {
-        "title": "Ify's notebook",
-        "text": "Outing with friends on Saturday",
-        "id": "6818faf3-983d-4453-83b8-a0bf5ca355ef"
+        "title": "Monday",
+        "text": "Study\nDo my assignments",
+        "id": "6d1676b8-9a44-44aa-a378-70362976be24"
+    },
+    {
+        "title": "Tuesday",
+        "text": "Cook\nLaundry",
+        "id": "b125c449-23db-46f3-9166-68ddfd390905"
+    },
+    {
+        "title": "Wednesday",
+        "text": "Business Meeting\n\n",
+        "id": "5c4ee4c9-68d4-464e-8268-ff74e1bbb1e3"
+    },
+    {
+        "title": "Thursday",
+        "text": "Attend classes\nGrocery Shopping",
+        "id": "0cd3f0cf-98a8-44a3-8b6e-335790d77008"
+    },
+    {
+        "title": "Friday",
+        "text": "Relax\nDinner with family and friends",
+        "id": "fa6defa2-4e6f-4767-ad38-f7cec8c9d224"
+    },
+    {
+        "title": "Saturday",
+        "text": "Party party party",
+        "id": "2ead49f6-77e9-4315-9176-9371ad6a5766"
     }
 ]
